@@ -1,5 +1,8 @@
 {
   "properties": {
+    "shop_url": {
+      "type": ["null", "string"]
+    },
     "id": {
       "type": ["null", "integer"]
     },
