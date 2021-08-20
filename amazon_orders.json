@@ -1,0 +1,230 @@
+{
+  "streams": [
+    {
+      "stream": {
+        "name": "FullOrders",
+        "jsonSchema": {
+          "type": ["null", "object"],
+          "title": "Orders",
+          "properties": {
+            "IsISPU": { "type": ["null", "boolean"] },
+            "IsPrime": { "type": ["null", "boolean"] },
+            "BuyerName": { "type": ["null", "string"] },
+            "OrderType": { "type": ["null", "string"] },
+            "seller_id": { "type": "string", "title": "seller_id" },
+            "BuyerEmail": { "type": ["null", "string"] },
+            "IsSoldByAB": { "type": ["null", "boolean"] },
+            "OrderItems": {
+              "type": ["null", "array"],
+              "items": {
+                "type": ["null", "object"],
+                "properties": {
+                  "ASIN": { "type": ["null", "string"] },
+                  "Title": { "type": ["null", "string"] },
+                  "CODFee": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "IsGift": { "type": ["null", "boolean"] },
+                  "ItemTax": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "BuyerInfo": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "GiftWrapTax": {
+                        "type": ["null", "object"],
+                        "properties": {
+                          "Amount": { "type": ["null", "string"] },
+                          "CurrencyCode": { "type": ["null", "string"] }
+                        }
+                      },
+                      "GiftWrapLevel": { "type": ["null", "string"] },
+                      "GiftWrapPrice": {
+                        "type": ["null", "object"],
+                        "properties": {
+                          "Amount": { "type": ["null", "string"] },
+                          "CurrencyCode": { "type": ["null", "string"] }
+                        }
+                      },
+                      "GiftMessageText": { "type": ["null", "string"] },
+                      "BuyerCustomizedInfo": {
+                        "type": ["null", "object"],
+                        "properties": {
+                          "CustomizedURL": { "type": ["null", "string"] }
+                        }
+                      }
+                    }
+                  },
+                  "ItemPrice": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "SellerSKU": { "type": ["null", "string"] },
+                  "IossNumber": { "type": ["null", "string"] },
+                  "ConditionId": { "type": ["null", "string"] },
+                  "OrderItemId": { "type": ["null", "string"] },
+                  "ProductInfo": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "NumberOfItems": { "type": ["null", "integer"] }
+                    }
+                  },
+                  "ShippingTax": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "PromotionIds": {
+                    "type": ["null", "array"],
+                    "items": { "type": ["null", "string"] }
+                  },
+                  "ConditionNote": { "type": ["null", "string"] },
+                  "PointsGranted": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "PointsNumber": { "type": ["null", "integer"] },
+                      "PointsMonetaryValue": {
+                        "type": ["null", "object"],
+                        "properties": {
+                          "Amount": { "type": ["null", "string"] },
+                          "CurrencyCode": { "type": ["null", "string"] }
+                        }
+                      }
+                    }
+                  },
+                  "ShippingPrice": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "TaxCollection": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Model": { "type": ["null", "string"] },
+                      "ResponsibleParty": { "type": ["null", "string"] }
+                    }
+                  },
+                  "CODFeeDiscount": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "IsTransparency": { "type": ["null", "boolean"] },
+                  "QuantityOrdered": { "type": ["null", "integer"] },
+                  "QuantityShipped": { "type": ["null", "integer"] },
+                  "PriceDesignation": { "type": ["null", "string"] },
+                  "ShippingDiscount": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "PromotionDiscount": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "StoreChainStoreId": { "type": ["null", "string"] },
+                  "ConditionSubtypeId": { "type": ["null", "string"] },
+                  "ShippingDiscountTax": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "PromotionDiscountTax": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "Amount": { "type": ["null", "string"] },
+                      "CurrencyCode": { "type": ["null", "string"] }
+                    }
+                  },
+                  "SerialNumberRequired": { "type": ["null", "boolean"] },
+                  "DeemedResellerCategory": { "type": ["null", "string"] },
+                  "ScheduledDeliveryEndDate": { "type": ["null", "string"] },
+                  "ScheduledDeliveryStartDate": { "type": ["null", "string"] }
+                }
+              }
+            },
+            "OrderTotal": {
+              "type": ["null", "object"],
+              "properties": {
+                "Amount": { "type": ["null", "string"] },
+                "CurrencyCode": { "type": ["null", "string"] }
+              }
+            },
+            "BuyerCounty": { "type": ["null", "string"] },
+            "OrderStatus": { "type": ["null", "string"] },
+            "PurchaseDate": { "type": ["null", "string"] },
+            "SalesChannel": { "type": ["null", "string"] },
+            "AmazonOrderId": { "type": ["null", "string"] },
+            "MarketplaceId": { "type": ["null", "string"] },
+            "PaymentMethod": { "type": ["null", "string"] },
+            "SellerOrderId": { "type": ["null", "string"] },
+            "IsPremiumOrder": { "type": ["null", "boolean"] },
+            "LastUpdateDate": { "type": ["null", "string"] },
+            "LatestShipDate": { "type": ["null", "string"] },
+            "IsBusinessOrder": { "type": ["null", "boolean"] },
+            "ShippingAddress": {
+              "type": ["null", "object"],
+              "properties": {
+                "City": { "type": ["null", "string"] },
+                "PostalCode": { "type": ["null", "string"] },
+                "CountryCode": { "type": ["null", "string"] },
+                "StateOrRegion": { "type": ["null", "string"] }
+              }
+            },
+            "EarliestShipDate": { "type": ["null", "string"] },
+            "ShipServiceLevel": { "type": ["null", "string"] },
+            "FulfillmentChannel": { "type": ["null", "string"] },
+            "IsReplacementOrder": { "type": ["null", "string"] },
+            "PurchaseOrderNumber": { "type": ["null", "string"] },
+            "NumberOfItemsShipped": { "type": ["null", "integer"] },
+            "PaymentMethodDetails": {
+              "type": ["null", "array"],
+              "items": { "type": ["null", "string"] }
+            },
+            "IsGlobalExpressEnabled": { "type": ["null", "boolean"] },
+            "NumberOfItemsUnshipped": { "type": ["null", "integer"] },
+            "ShipmentServiceLevelCategory": { "type": ["null", "string"] }
+          },
+          "description": "All orders that were updated after a specified date"
+        },
+        "supportedSyncModes": ["full_refresh", "incremental"],
+        "sourceDefinedCursor": true,
+        "defaultCursorField": ["LastUpdateDate"],
+        "sourceDefinedPrimaryKey": [],
+        "namespace": null
+      },
+      "config": {
+        "syncMode": "incremental",
+        "cursorField": ["LastUpdateDate"],
+        "destinationSyncMode": "append_dedup",
+        "primaryKey": [["AmazonOrderId"]],
+        "aliasName": "FullOrders",
+        "selected": true
+      }
+    }
+  ]
+}
